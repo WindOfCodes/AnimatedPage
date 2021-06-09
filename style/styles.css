@@ -1,0 +1,133 @@
+
+body {
+    background-color: #e275d9;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poiret One', cursive;
+}
+
+.bigImg {
+    width: 85vw;
+    height: 85vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.3);
+}
+
+.bigImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.leftButtons, .rightButtons {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftButtons {
+    left: 5%;
+    height: 75%;
+}
+
+.rightButtons {
+    right: 5%;
+    height: 50%;
+}
+
+.centerBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 80%;
+}
+
+.cBTitle {
+    color: #e275d9;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    opacity: 0;
+    animation-name: showTitle;
+    animation-duration: 3s;
+}
+
+.cBTitle:hover {
+    cursor: default;
+}
+
+.cBText {
+    color: #e275d9;
+    font-size: 35px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    animation-name: showText;
+    animation-duration: 4s;
+}
+
+@keyframes showTitle {
+    0% { opacity: 0;}
+    50% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
+@keyframes showText {
+    0% { opacity: 0; margin-top: 30%;}
+    60% { opacity: 0; margin-top: 15%;}
+    100% {opacity: 1; margin-top: 0;}
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #be68b7;
+    transition: transform 0.3s;
+}
+
+i:hover {
+    cursor: pointer;
+    color: #e275d9;
+    transform: scale(1.5);
+}
+
+.btn {
+    height: 10%;
+    color: #be68b7;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #e275d9;
+    transform: scale(2);
+}
